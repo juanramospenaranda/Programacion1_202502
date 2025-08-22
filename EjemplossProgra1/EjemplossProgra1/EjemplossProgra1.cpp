@@ -9,7 +9,7 @@ int main()
 }
 
 
-void imprimir() {
+void Imprimir() {
     std::cout << "Hello World!\n";
 }
 
