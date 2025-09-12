@@ -8,12 +8,19 @@ int main()
 {
     float peso = 0;
     float estatura = 0;
-
+    float imc = 0;
     std::cout << "Digite su peso\n";
     cin >> peso;
 
     std::cout << "Digite su estatura\n";
     cin >> estatura;
+
+
+    ///Calculo de IMC
+    imc = peso / (estatura * estatura);
+
+    std::cout << "Su IMC es: "<<imc<<endl;
+
 
 
 
