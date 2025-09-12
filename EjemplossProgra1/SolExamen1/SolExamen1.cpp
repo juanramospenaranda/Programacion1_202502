@@ -9,6 +9,8 @@ int main()
     float peso = 0;
     float estatura = 0;
     float imc = 0;
+
+    string texto;
     std::cout << "Digite su peso\n";
     cin >> peso;
 
@@ -19,10 +21,31 @@ int main()
     ///Calculo de IMC
     imc = peso / (estatura * estatura);
 
+    //Mostrar IMC
     std::cout << "Su IMC es: "<<imc<<endl;
 
 
+    if (imc<18.5)
+    {
+        texto = "Segun su IMC , usted tiene Bajo Peso ";
 
+        
+    }
+    else
+    {
+        if (imc<25)
+        {
+            texto = "Segun su IMC , usted tiene Peso Normal";
+            
+        }
+        else
+        {
+            texto = "Segun su IMC , usted tiene Sobre Peso";
+            
+        }
+    }
+
+    std::cout <<texto <<endl;
 
 
 
