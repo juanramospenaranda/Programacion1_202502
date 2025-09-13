@@ -6,13 +6,15 @@ using namespace std;
 
 
 class Persona {
-private:
+
+    
+    
+
+public:
     string nombre;
     int edad;
     char sexo;
-
-public:
-    Persona(string n, int e, char s) : nombre(n), edad(e), sexo(s) {}
+    
 
     void saludar() {
         cout << "Hola, soy " << nombre << "y tengo " << edad << " anios";
@@ -36,7 +38,9 @@ public:
 
 int main()
 {
-    Persona persona("Pablo", 18, 'M');
+    Persona persona;
+    persona.nombre = "Pablo";
+    persona.sexo = 'M';
     persona.saludar();
     persona.validar();
 
