@@ -4,11 +4,27 @@
 #include <iostream>
 using namespace std;
 
+class CalculadoraIMC {
+
+public:
+    float imc;
+    void Calcular(float peso, float estatura) {
+        imc = peso / (estatura * estatura);
+
+        }
+
+
+};
+
+
 int main()
 {
+    CalculadoraIMC calc;
+    
+
     float peso = 0;
     float estatura = 0;
-    float imc = 0;
+   // float imc = 0;
 
     string texto;
     std::cout << "Digite su peso\n";
@@ -19,13 +35,16 @@ int main()
 
 
     ///Calculo de IMC
-    imc = peso / (estatura * estatura);
+    //
+    // imc = peso / (estatura * estatura);
 
+    calc.Calcular(peso , estatura);
+    //imc = calc.imc;
     //Mostrar IMC
-    std::cout << "Su IMC es: "<<imc<<endl;
+    std::cout << "Su IMC es: "<< calc.imc <<endl;
 
 
-    if (imc<18.5)
+    if (calc.imc <18.5)
     {
         texto = "Segun su IMC , usted tiene Bajo Peso ";
 
@@ -33,7 +52,7 @@ int main()
     }
     else
     {
-        if (imc<25)
+        if (calc.imc <25)
         {
             texto = "Segun su IMC , usted tiene Peso Normal";
             
