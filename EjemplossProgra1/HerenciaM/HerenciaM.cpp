@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Persona.h"
+#include "Estudiante.h"
 
 int main()
 {
@@ -11,7 +12,14 @@ int main()
     p.Cedula = "011012120";
     p.Edad = 90;
 
+    Estudiante estudiante;
+    estudiante.Nombre = "Juan";
+    estudiante.Cedula = "010215212";
+    estudiante.Edad = 55;
+    estudiante.Carnet = "565656";
+    estudiante.Carrera = "TI";
     p.Mostrar();
+    estudiante.Mostrar();
 
 }
 
