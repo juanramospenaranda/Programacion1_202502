@@ -9,29 +9,15 @@
 
 int main()
 {
-    Persona p;
-    p.Nombre = "Pablo";
-    p.Cedula = "011012120";
-    p.Edad = 90;
+   // Persona p("Pablo", "54545",45);
+   
 
-    Estudiante estudiante;
-    estudiante.Nombre = "Juan";
-    estudiante.Cedula = "010215212";
-    estudiante.Edad = 55;
-    estudiante.Carnet = "565656";
-    estudiante.Carrera = "TI";
-   // p.Mostrar();
+    Estudiante estudiante("Pablo", "54545", 45, "4545", "TI");
     //estudiante.Mostrar();
-
-    Profesor pro;
-    pro.Nombre = "Profe1";
-    pro.Salario = 1000;
-    pro.Mostrar();
-
-    Guarda g;
-    g.Nombre = "Guarda1";
+   
     //g.Mostrar();
-
+    Guarda guarda("Maria", "55555", 60, false, "Nocturno");
+    guarda.Mostrar();
 
    
     

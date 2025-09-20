@@ -4,13 +4,13 @@ using namespace std;
 #include <iostream>
 class Persona
 {
-public:
+protected:
 	string Nombre;
 	string Cedula;
 	int Edad;
 
-
-
+public:
+	Persona(string nombre, string cedula, int edad);
 	void Mostrar();
 	
 };
