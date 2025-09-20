@@ -125,12 +125,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Estudiante.cpp" />
+    <ClCompile Include="Guarda.cpp" />
     <ClCompile Include="HerenciaM.cpp" />
     <ClCompile Include="Persona.cpp" />
+    <ClCompile Include="Profesor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Estudiante.h" />
+    <ClInclude Include="Guarda.h" />
     <ClInclude Include="Persona.h" />
+    <ClInclude Include="Profesor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

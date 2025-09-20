@@ -4,6 +4,8 @@
 #include <iostream>
 #include "Persona.h"
 #include "Estudiante.h"
+#include "Profesor.h"
+#include "Guarda.h"
 
 int main()
 {
@@ -18,8 +20,22 @@ int main()
     estudiante.Edad = 55;
     estudiante.Carnet = "565656";
     estudiante.Carrera = "TI";
-    p.Mostrar();
-    estudiante.Mostrar();
+   // p.Mostrar();
+    //estudiante.Mostrar();
+
+    Profesor pro;
+    pro.Nombre = "Profe1";
+    pro.Salario = 1000;
+    pro.Mostrar();
+
+    Guarda g;
+    g.Nombre = "Guarda1";
+    //g.Mostrar();
+
+
+   
+    
+    
 
 }
 
