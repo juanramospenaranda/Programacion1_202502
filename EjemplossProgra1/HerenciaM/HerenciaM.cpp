@@ -6,19 +6,63 @@
 #include "Estudiante.h"
 #include "Profesor.h"
 #include "Guarda.h"
+//using 
 
 int main()
 {
    // Persona p("Pablo", "54545",45);
    
+    string nombre;
+    string cedula;
+    int edad;
+    string carnet;
+    string carrera;
+    string Respuesta = "Si";
+    
+    bool Continuar = true;
 
-    Estudiante estudiante("Pablo", "54545", 45, "4545", "TI");
-    //estudiante.Mostrar();
-   
-    //g.Mostrar();
-    Guarda guarda("Maria", "55555", 60, false, "Nocturno");
-    guarda.Mostrar();
+    while (Continuar)
+    {
+        cout << "Digite el Nombre del Estudiante" << endl;
+        cin >> nombre;
 
+        cout << "Digite la Cédula del Estudiante" << endl;
+        cin >> cedula;
+
+        cout << "Digite la Edad del Estudiante" << endl;
+        cin >> edad;
+
+        cout << "Digite el Carnet del Estudiante" << endl;
+        cin >> carnet;
+
+
+        cout << "Digite la carrera del Estudiante" << endl;
+        cin >> carrera;
+
+
+        Estudiante estudiante(nombre, cedula, edad, carnet, carrera);
+        estudiante.Mostrar();
+
+
+        cout << "Desea continuar? Si/No" << endl;
+        cin >> Respuesta;
+
+        if (Respuesta == "No" || Respuesta == "no" )
+        {
+            Continuar = false;
+        }
+        else
+        {
+            Continuar = true;
+        }
+        
+
+
+
+
+    }
+
+    
    
     
     

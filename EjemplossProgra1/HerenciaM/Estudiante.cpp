@@ -9,5 +9,5 @@ Estudiante::Estudiante(string nombre, string cedula, int edad, string carnet, st
 
 void Estudiante::Mostrar() {
 	cout << "Nombre del Estudiante :" << Nombre<<endl;
-	cout << "Carnet:" << Carnet;
+	cout << "Carnet:" << Carnet << endl;
 }
