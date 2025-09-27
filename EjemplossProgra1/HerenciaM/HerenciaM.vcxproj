@@ -124,6 +124,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Carnet.cpp" />
     <ClCompile Include="Estudiante.cpp" />
     <ClCompile Include="Guarda.cpp" />
     <ClCompile Include="HerenciaM.cpp" />
@@ -131,6 +132,7 @@
     <ClCompile Include="Profesor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Carnet.h" />
     <ClInclude Include="Estudiante.h" />
     <ClInclude Include="Guarda.h" />
     <ClInclude Include="Persona.h" />

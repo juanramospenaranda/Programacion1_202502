@@ -30,6 +30,9 @@
     <ClCompile Include="Guarda.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="Carnet.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Persona.h">
@@ -42,6 +45,9 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Guarda.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Carnet.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

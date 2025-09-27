@@ -12,6 +12,8 @@ protected:
 public:
 	Persona(string nombre, string cedula, int edad);
 	void Mostrar();
+	Persona();
+	
 	
 };
 

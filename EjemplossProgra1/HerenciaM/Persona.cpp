@@ -14,6 +14,10 @@ void Persona::Mostrar()
 	{
 		cout << "Nombre:" << Nombre;
 	}
+
+Persona::Persona()
+{
+}
 	
 
 
