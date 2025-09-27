@@ -12,6 +12,6 @@ public:
 	Estudiante();
 	void Mostrar();
 	Estudiante GetEstudiante(string nombre, string cedula, int edad, Carnet carnet, string carrera);
-	void SolicitarDatos();
+	Estudiante SolicitarDatos();
 };
 

@@ -6,6 +6,7 @@
 #include "Estudiante.h"
 #include "Profesor.h"
 #include "Guarda.h"
+#include "Grupo.h"
 //using 
 
 int main()
@@ -22,7 +23,17 @@ int main()
     while (Continuar)
     {
         Estudiante estudiante;
-        estudiante.SolicitarDatos();
+        estudiante = estudiante.SolicitarDatos();
+
+        Estudiante estudiantes[3];
+        estudiantes[1] = estudiante;
+
+
+
+        Profesor profe;
+        Grupo grupo("TI",profe,estudiantes);
+        grupo.Mostrar();
+
        // estudiante.Mostrar();
         cout << "Desea continuar? Si/No" << endl;
             cin >> Respuesta;

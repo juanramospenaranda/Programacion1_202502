@@ -25,7 +25,7 @@ Estudiante Estudiante::GetEstudiante(string nombre, string cedula, int edad, Car
 	return est;
 }
 
-void Estudiante::SolicitarDatos()
+Estudiante Estudiante::SolicitarDatos()
 {
     string nombre;
     string cedula;
@@ -49,5 +49,6 @@ void Estudiante::SolicitarDatos()
     Estudiante estudiante(nombre, cedula, edad, objCarnet, carrera);
 
     estudiante.Mostrar();
+    return estudiante;
     
 }
