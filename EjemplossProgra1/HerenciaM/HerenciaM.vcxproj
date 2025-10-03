@@ -130,6 +130,7 @@
     <ClCompile Include="Grupo.cpp" />
     <ClCompile Include="Guarda.cpp" />
     <ClCompile Include="HerenciaM.cpp" />
+    <ClCompile Include="Nodo.cpp" />
     <ClCompile Include="Persona.cpp" />
     <ClCompile Include="Profesor.cpp" />
   </ItemGroup>
@@ -139,6 +140,7 @@
     <ClInclude Include="Estudiante.h" />
     <ClInclude Include="Grupo.h" />
     <ClInclude Include="Guarda.h" />
+    <ClInclude Include="Nodo.h" />
     <ClInclude Include="Persona.h" />
     <ClInclude Include="Profesor.h" />
   </ItemGroup>
