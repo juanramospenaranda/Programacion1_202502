@@ -125,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Carnet.cpp" />
+    <ClCompile Include="Cuenta.cpp" />
     <ClCompile Include="Estudiante.cpp" />
     <ClCompile Include="Grupo.cpp" />
     <ClCompile Include="Guarda.cpp" />
@@ -134,6 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Carnet.h" />
+    <ClInclude Include="Cuenta.h" />
     <ClInclude Include="Estudiante.h" />
     <ClInclude Include="Grupo.h" />
     <ClInclude Include="Guarda.h" />

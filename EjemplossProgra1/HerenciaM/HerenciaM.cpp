@@ -11,47 +11,65 @@
 
 int main()
 {
-   // Persona p("Pablo", "54545",45);
-   
-
-    string Respuesta = "Si";
-    
-    bool Continuar = true;
-
-    
-
-    while (Continuar)
-    {
-        Estudiante estudiante;
-        estudiante = estudiante.SolicitarDatos();
-
-        Estudiante estudiantes[3];
-        estudiantes[1] = estudiante;
+    int i = 10;
+    int* x = &i;
 
 
+    cout <<"valor:" << i << endl;
+    cout << "Direccion:" << &i << endl;
+    cout << "Valor de *x:" << x << endl;
+    cout << "Valor en la direccion guardad *x:" << *x << endl;
 
-        Profesor profe;
-        Grupo grupo("TI",profe,estudiantes);
-        grupo.Mostrar();
+    i = 20;
 
-       // estudiante.Mostrar();
-        cout << "Desea continuar? Si/No" << endl;
-            cin >> Respuesta;
-
-        if (Respuesta == "No" || Respuesta == "no" )
-        {
-            Continuar = false;
-        }
-        else
-        {
-            Continuar = true;
-        }
-        
+    cout << "valor:" << i << endl;
+    cout << "Direccion:" << &i << endl;
+    cout << "Valor de *x:" << x << endl;
+    cout << "Valor en la direccion guardad *x:" << *x << endl;
 
 
 
+   //// Persona p("Pablo", "54545",45);
+   //
 
-    }
+   // string Respuesta = "Si";
+   // 
+   // bool Continuar = true;
+
+   // 
+
+   // while (Continuar)
+   // {
+   //     Estudiante estudiante;
+   //     estudiante = estudiante.SolicitarDatos();
+
+   //     Estudiante estudiantes[3];
+   //     estudiantes[1] = estudiante;
+
+
+
+   //     Profesor profe;
+   //     Grupo grupo("TI",profe,estudiantes);
+   //     grupo.Mostrar();
+
+   //    // estudiante.Mostrar();
+   //     cout << "Desea continuar? Si/No" << endl;
+   //         cin >> Respuesta;
+
+   //     if (Respuesta == "No" || Respuesta == "no" )
+   //     {
+   //         Continuar = false;
+   //     }
+   //     else
+   //     {
+   //         Continuar = true;
+   //     }
+   //     
+
+
+
+
+   // }
 
     
    
