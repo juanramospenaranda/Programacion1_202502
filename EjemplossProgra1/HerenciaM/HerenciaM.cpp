@@ -7,11 +7,21 @@
 #include "Profesor.h"
 #include "Guarda.h"
 #include "Grupo.h"
+#include "ListaEnlazada.h"
 //using 
 
 int main()
 {
-    int i = 10;
+
+    ListaEnlazada lista;
+    lista.Insertar(20);
+    lista.Insertar(10);
+    lista.Insertar(8);
+    lista.Insertar(7);
+    lista.Insertar(30);
+
+    lista.Mostrar();
+    /*int i = 10;
     int* x = &i;
 
 
@@ -26,7 +36,7 @@ int main()
     cout << "Direccion:" << &i << endl;
     cout << "Valor de *x:" << x << endl;
     cout << "Valor en la direccion guardad *x:" << *x << endl;
-
+    */
 
 
    //// Persona p("Pablo", "54545",45);
