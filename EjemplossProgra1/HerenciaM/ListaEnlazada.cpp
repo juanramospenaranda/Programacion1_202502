@@ -26,3 +26,22 @@ void ListaEnlazada::Mostrar() {
 	cout << "FINAL DE LA LISTA" << endl;
 }
 
+void ListaEnlazada::Buscar(int valor)
+{
+	int posicion = 1;
+	Nodo* actual = cabeza;
+	while (actual != nullptr)
+	{
+		if (actual->dato==valor)
+		{
+			cout << "EL dato se encuentra en el nodo:" <<posicion <<endl;
+		}
+		//cout << actual->dato << endl;
+		actual = actual->siguiente;
+		posicion++;
+	}
+	cout << "FINAL DE LA LISTA" << endl;
+}
+
+
+

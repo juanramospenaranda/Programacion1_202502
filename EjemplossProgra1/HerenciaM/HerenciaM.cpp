@@ -14,13 +14,43 @@ int main()
 {
 
     ListaEnlazada lista;
+
+     bool Continuar = true;
+     string Respuesta = "Si";
+     int dato = 0;
+
+     while (Continuar)
+     {
+         cout << "Ingrese Dato" << endl;
+         cin >> dato;
+         lista.Insertar(dato);
+              cout << "Desea continuar? Si/No" << endl;
+            cin >> Respuesta;
+
+         if (Respuesta == "No" || Respuesta == "no")
+                  {
+                      Continuar = false;
+                  }
+                  else
+                  {
+                      Continuar = true;
+                  }
+                  
+     }/*
     lista.Insertar(20);
     lista.Insertar(10);
     lista.Insertar(8);
     lista.Insertar(7);
     lista.Insertar(30);
-
+    */
     lista.Mostrar();
+    
+    int i;
+    cout << "Digite valor a buscar:" << endl;
+    cin >> i;
+    lista.Buscar(i);
+
+
     /*int i = 10;
     int* x = &i;
 
