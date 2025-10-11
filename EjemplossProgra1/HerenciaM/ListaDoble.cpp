@@ -37,3 +37,19 @@ void ListaDoble::Mostrar() {
 }
 #pragma endregion
 
+void ListaDoble::Buscar(int valor)
+{
+	int posicion = 1;
+	NodoDoble* actual = head;
+	while (actual != nullptr)
+	{
+		if (actual->dato == valor)
+		{
+			cout << "EL dato se encuentra en el nodo:" << posicion << endl;
+		}
+		//cout << actual->dato << endl;
+		actual = actual->siguiente;
+		posicion++;
+	}
+	cout << "FINAL DE LA LISTA" << endl;
+}
