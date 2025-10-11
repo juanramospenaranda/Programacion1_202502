@@ -8,12 +8,13 @@
 #include "Guarda.h"
 #include "Grupo.h"
 #include "ListaEnlazada.h"
+#include "ListaDoble.h"
 //using 
 
 int main()
 {
 
-    ListaEnlazada lista;
+    ListaDoble lista;
 
      bool Continuar = true;
      string Respuesta = "Si";
@@ -44,12 +45,12 @@ int main()
     lista.Insertar(30);
     */
     lista.Mostrar();
-    
+   /*
     int i;
     cout << "Digite valor a buscar:" << endl;
     cin >> i;
-    lista.Buscar(i);
-
+    //lista.Buscar(i);
+    */
 
     /*int i = 10;
     int* x = &i;

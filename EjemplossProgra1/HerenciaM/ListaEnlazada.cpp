@@ -1,11 +1,14 @@
 #include "ListaEnlazada.h"
 #include <iostream>
+#include "ListaDoble.h"
 using namespace std;
 
 ListaEnlazada::ListaEnlazada()
 {
 	cabeza = nullptr;
 }
+
+
 
 void ListaEnlazada::Insertar(int valor)
 {
