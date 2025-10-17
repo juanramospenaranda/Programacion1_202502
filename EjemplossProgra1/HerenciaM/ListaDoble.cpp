@@ -7,6 +7,22 @@ ListaDoble::ListaDoble(): head(nullptr)
 {
 }
 
+void ListaDoble::Buscar(int valor)
+{
+	int posicion = 1;
+	NodoDoble* actual = head;
+	while (actual != nullptr)
+	{
+		if (actual->dato == valor)
+		{
+			cout << "EL dato se encuentra en el nodo:" << posicion << endl;
+		}
+		//cout << actual->dato << endl;
+		actual = actual->siguiente;
+		posicion++;
+	}
+	cout << "FINAL DE LA LISTA" << endl;
+}
 
 void ListaDoble::Insertar(int valor) {
 	NodoDoble* nuevo = new NodoDoble(valor);
@@ -25,11 +41,11 @@ void ListaDoble::Mostrar() {
 	NodoDoble* actual = head;
 	while (actual != nullptr)
 	{
-		cout << actual->dato<<" ";
-		cout<<"Direc actual" << actual << " ";
+		cout << actual->dato<<"<---> ";
+		/*cout << "Direc actual" << actual << " ";
 		cout << "Direc anterior" << actual->anterior << " ";
 		cout << "Direc siguiente" << actual->siguiente << " ";
-		cout << endl;
+		cout << endl;*/
 		actual = actual->siguiente;
 	}
 

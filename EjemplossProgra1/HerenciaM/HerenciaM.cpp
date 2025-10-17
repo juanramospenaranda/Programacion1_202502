@@ -1,5 +1,6 @@
 // HerenciaM.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 //
+#include <stdlib.h>
 
 #include <iostream>
 #include "Persona.h"
@@ -13,6 +14,7 @@
 
 int main()
 {
+	system("cls");
 
     ListaDoble lista;
 
@@ -45,12 +47,12 @@ int main()
     lista.Insertar(30);
     */
     lista.Mostrar();
-   /*
+   
     int i;
     cout << "Digite valor a buscar:" << endl;
     cin >> i;
-    //lista.Buscar(i);
-    */
+    lista.Buscar(i);
+    
 
     /*int i = 10;
     int* x = &i;
