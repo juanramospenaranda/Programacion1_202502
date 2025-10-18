@@ -1,5 +1,6 @@
 #include "ListaDoble.h"
 #include <iostream>
+#include<fstream>
 using namespace std;
 
 
@@ -58,6 +59,29 @@ void ListaDoble::Eliminar(int valor)
 	
 	actual = actual->siguiente;
 	}
+}
+
+void ListaDoble::GuardarEnArchivo()
+{
+	ofstream archivo("datos.txt");
+	if (!archivo)
+	{
+		cout << "No se pudo crear el archivo" << endl;	
+	}
+
+	archivo << "Lista Doble" << endl;
+	NodoDoble* actual = head;
+	while (actual != nullptr)
+	{
+		archivo << actual->dato << "<---> ";
+		/*cout << "Direc actual" << actual << " ";
+		cout << "Direc anterior" << actual->anterior << " ";
+		cout << "Direc siguiente" << actual->siguiente << " ";
+		cout << endl;*/
+		actual = actual->siguiente;
+	}
+
+
 }
 
 void ListaDoble::Insertar(int valor) {

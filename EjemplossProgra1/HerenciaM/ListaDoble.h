@@ -10,6 +10,7 @@ public:
 	void Mostrar();
 	void Buscar(int valor);
 	void Eliminar(int valor);
+	void GuardarEnArchivo();
 
 };
 

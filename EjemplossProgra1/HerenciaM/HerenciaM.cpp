@@ -46,14 +46,15 @@ int main()
     lista.Insertar(7);
     lista.Insertar(30);
     */
-    lista.Mostrar();
+   /* lista.Mostrar();
    
     int i;
     cout << "Digite valor a buscar y eliminar:" << endl;
     cin >> i;
     lista.Buscar(i);
-	lista.Eliminar(i);
+	//lista.Eliminar(i);*/
     lista.Mostrar();
+	lista.GuardarEnArchivo();
 
     /*int i = 10;
     int* x = &i;
