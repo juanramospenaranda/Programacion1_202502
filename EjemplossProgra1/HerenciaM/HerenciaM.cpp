@@ -49,10 +49,11 @@ int main()
     lista.Mostrar();
    
     int i;
-    cout << "Digite valor a buscar:" << endl;
+    cout << "Digite valor a buscar y eliminar:" << endl;
     cin >> i;
     lista.Buscar(i);
-    
+	lista.Eliminar(i);
+    lista.Mostrar();
 
     /*int i = 10;
     int* x = &i;

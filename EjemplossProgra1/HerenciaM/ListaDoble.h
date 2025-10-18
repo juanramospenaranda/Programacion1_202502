@@ -9,6 +9,7 @@ public:
 	void Insertar(int valor);
 	void Mostrar();
 	void Buscar(int valor);
+	void Eliminar(int valor);
 
 };
 
