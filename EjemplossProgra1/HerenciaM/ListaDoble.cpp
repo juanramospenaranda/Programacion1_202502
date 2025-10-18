@@ -1,6 +1,8 @@
 #include "ListaDoble.h"
 #include <iostream>
 #include<fstream>
+
+#include <string>
 using namespace std;
 
 
@@ -80,8 +82,22 @@ void ListaDoble::GuardarEnArchivo()
 		cout << endl;*/
 		actual = actual->siguiente;
 	}
+	archivo.close();
 
+}
 
+void ListaDoble::LeerArchivo()
+{
+	ifstream archivo("datos.txt");
+	if (!archivo)
+	{
+		cout << "No se pudo abrir el archivo" << endl;
+	}
+	string linea;
+	while (getline(archivo, linea))
+	{
+		cout << linea << endl;
+	}
 }
 
 void ListaDoble::Insertar(int valor) {

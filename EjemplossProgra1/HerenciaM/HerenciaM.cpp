@@ -53,8 +53,9 @@ int main()
     cin >> i;
     lista.Buscar(i);
 	//lista.Eliminar(i);*/
-    lista.Mostrar();
-	lista.GuardarEnArchivo();
+    //lista.Mostrar();
+	//lista.GuardarEnArchivo();
+	lista.LeerArchivo();
 
     /*int i = 10;
     int* x = &i;
